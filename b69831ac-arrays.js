@@ -51,6 +51,16 @@ function longestStr () {
 // 3. Find even numbers
 // ---------------------------
 
+function evenNum() {
+  var evenBank = [];
+  for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenBank.push(numbers[i]);
+    }
+  }
+  return evenBank;
+}
+
 
 
 // ---------------------------
