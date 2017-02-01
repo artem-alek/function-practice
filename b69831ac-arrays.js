@@ -33,6 +33,17 @@ for (var i = 0; i < numbers.length; i++) {
 // 2. Find longest string
 // ---------------------------
 
+function longestStr () {
+  var strBank = 0;
+  var str = '';
+  for (var i = 0; i < strings.length; i++) {
+    if (strings[i].length > strBank) {
+      strBank = strings[i].length
+      str = strings[i];
+    }
+  }
+  return str;
+}
 
 
 
