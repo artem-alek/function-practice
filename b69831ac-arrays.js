@@ -67,16 +67,53 @@ function evenNum() {
 // 4. Find odd numbers
 // ---------------------------
 
+function oddNums() {
+  var oddBank = [];
+  for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 > 0) {
+      oddBank.push(numbers[i]);
+    }
+  }
+  return oddBank;
+}
 
 // ---------------------------
 // 5. Find words that contain `is`
 // ---------------------------
+
+function contIs() {
+  var contBank = [];
+  for (var i = 0; i < strings.length; i++) {
+    var word = strings[i];
+    for (var a = 0; a < word.length; a++) {
+      if (word[a] === 'i' ) {
+        if (word[a+1] === 's') {
+          contBank.push(strings[i]);
+        }
+      }
+    }
+  }
+  return contBank;
+}
 
 
 
 // ---------------------------
 // 5. Join Both Arrays Together
 // ---------------------------
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+var strings = ['this','is','a','collection','of','words'];
+
+function join() {
+  var newArray = [];
+  for (var i = 0; i < numbers.length; i++) {
+    newArray.push(numbers[i]);
+  }
+  for (var i = 0; i < strings.length; i++) {
+    newArray.push(strings[i]);
+  }
+  return newArray;
+}
 
 
 
